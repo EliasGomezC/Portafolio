@@ -9,50 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- <link rel="stylesheet" href="./src/output.css"> -->
     <link rel="icon" href="./images/proElias4.jpg" type="image/x-icon" />
-    <style>
-        .glass {
-            backdrop-filter: blur(10px);
-            background: rgba(29, 41, 53, 0.6);
-        }
-
-        .radial-bg {
-            background-image: radial-gradient(40rem 40rem at 50% -10%, rgba(34, 197, 94, 0.25), transparent), radial-gradient(30rem 30rem at 20% 120%, rgba(45, 212, 191, 0.15), transparent);
-        }
-
-        .shadow-neon {
-            box-shadow: 0 0 0 1px rgba(34, 197, 94, .25), 0 8px 30px rgba(34, 197, 94, .15);
-        }
-
-        body {
-            cursor: url('./images/gradient-jade-cursor.png'), auto;
-        }
-
-        a {
-            cursor: url('./images/Green_Bottle_GlassGradientPointer.png') 8 0, pointer;
-        }
-
-        button {
-            cursor: url('./images/Green_Bottle_GlassGradientPointer.png') 8 0, pointer !important;
-        }
-
-        /* Animación infinita */
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        .animate-scroll {
-            display: flex;
-            width: calc(200%);
-            /* porque duplicamos los iconos */
-            animation: scroll 20s linear infinite;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-[#0f1720] text-white selection:bg-green-500/30 selection:text-white">
@@ -114,7 +71,7 @@
                     Kanban. Enfoque constante en la calidad y la mejora continua.
                 </p>
                 <div class="mt-8 flex flex-wrap gap-3">
-                    <a href="./assets/GOMEZ CUEVA ELIAS JAIR  -  CV.pdf" download
+                    <a href="./assets/ELIAS JAIR GOMEZ CUEVA CV.pdf" download
                         class="rounded-md border border-green-600/50 px-5 py-2.5 font-semibold text-green-400 hover:bg-green-600  hover:text-white duration-700 flex gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -134,20 +91,17 @@
                                 d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.2-3.37-1.2-.45-1.17-1.1-1.49-1.1-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.04 1.53 1.04.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.08.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z" />
                         </svg>
                     </a>
-                    <a href="#" class="rounded-md bg-green-600 p-2 ring-1 ring-white/10 hover:scale-110 duration-500"
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eliasgcueva@gmail.com&subject=Oportunidad%20laboral&body=Vi%20tu%20perfil%20y%20me%20gustar%C3%ADa%20conversar%20sobre%20una%20posible%20oportunidad%20laboral%20%0A%0A%C2%BFPodemos%20agendar%20una%20reuni%C3%B3n%3F%0A%0A"
+                        target="_blank"
+                        class="rounded-md bg-green-600 p-2 ring-1 ring-white/10 hover:scale-110 duration-500"
                         aria-label="LinkedIn">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
-                            <path fill="#ffffff"
-                                d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4zM8.5 8h3.8v2.05h.05c.53-1.01 1.84-2.07 3.79-2.07 4.06 0 4.81 2.67 4.81 6.14V23h-4v-6.54c0-1.56-.03-3.56-2.17-3.56-2.18 0-2.51 1.7-2.51 3.44V23h-3.97z" />
-                        </svg>
-                    </a>
-                    <a href="#" class="rounded-md bg-green-600 p-2 ring-1 ring-white/10 hover:scale-110 duration-500"
-                        aria-label="Proyectos externo">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
-                            <path fill="#ffffff" d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z" />
-                            <path fill="#ffffff" d="M5 5h5V3H5c-1.1 0-2 .9-2 2v5h2V5z" />
-                            <path fill="#ffffff" d="M5 19h5v2H5c-1.1 0-2-.9-2-2v-5h2v5z" />
-                            <path fill="#ffffff" d="M19 19h-5v2h5c1.1 0 2-.9 2-2v-5h-2v5z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-mail">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" />
+                            <path
+                                d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" />
                         </svg>
                     </a>
                 </div>
@@ -177,99 +131,246 @@
     <!-- Sobre mí -->
     <section id="SobreMi" class="bg-white">
         <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-            <h2 class="mb-10 text-center text-4xl font-bold text-black">SOBRE MÍ</h2>
-            <div class="grid gap-8 lg:grid-cols-2 items-center">
-                <!-- Added complete About Me content -->
+            <h2 class="mb-10 text-center text-4xl md:text-5xl font-bold text-black animate-fade-in-up">
+                SOBRE MÍ
+            </h2>
+            <div class="grid gap-8 lg:grid-cols-2 items-start">
+                <!-- Columna Izquierda: Historia, Enfoque y Educación -->
                 <div class="space-y-6">
-                    <div class="rounded-2xl border border-green-600 bg-gray-50 p-6">
-                        <h3 class="text-xl font-bold text-black mb-4">Mi Historia</h3>
+                    <!-- Mi Historia -->
+                    <div
+                        class="card-stagger rounded-2xl border border-green-600 bg-gray-50 p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-xl font-bold text-black mb-4 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                            Mi Historia
+                        </h3>
                         <p class="text-gray-700 leading-relaxed">
                             Soy un desarrollador Full Stack apasionado por crear soluciones tecnológicas innovadoras.
                             Actualmente estudiante de TSU en Desarrollo de Software, combino conocimientos académicos
-                            con experiencia práctica en proyectos reales que impactan positivamente a los usuarios.
+                            con experiencia práctica en proyectos reales. Mi viaje comenzó con un interés en la
+                            programación durante la secundaria, y hoy me enfoco en construir apps que resuelvan
+                            problemas.
                         </p>
                     </div>
 
-                    <div class="rounded-2xl border border-green-600 bg-gray-50 p-6">
-                        <h3 class="text-xl font-bold text-black mb-4">Mi Enfoque</h3>
+                    <!-- Mi Enfoque -->
+                    <div
+                        class="card-stagger rounded-2xl border border-green-600 bg-gray-50 p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-xl font-bold text-black mb-4 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                            Mi Enfoque
+                        </h3>
                         <p class="text-gray-700 leading-relaxed">
-                            Me especializo en el desarrollo de aplicaciones web y móviles, siempre enfocado en
-                            la calidad del código, la experiencia del usuario y las mejores prácticas de desarrollo.
-                            Disfruto trabajar tanto en el frontend como en el backend, creando soluciones completas
-                            y escalables.
+                            Me especializo en el desarrollo de aplicaciones web y móviles, siempre enfocado en la
+                            calidad del código, la experiencia del usuario (UX) y las mejores prácticas de desarrollo.
+                            Disfruto trabajar tanto en el frontend (interfaces intuitivas) como en el backend (lógica
+                            robusta), creando soluciones completas y escalables que se adapten a las necesidades del
+                            usuario final.
                         </p>
+                    </div>
+
+                    <!-- Educación (Nueva) -->
+                    <div
+                        class="card-stagger rounded-2xl border border-green-600 bg-gray-50 p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-xl font-bold text-black mb-4 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                            </svg>
+                            Educación
+                        </h3>
+                        <div class="space-y-2">
+                            <p class="text-gray-700 font-semibold">TSU en Desarrollo de Software Multiplatadorma</p>
+                            <p class="text-gray-600 text-sm">Universidad Tecnológica de Tijuana (UTT) • 2023 - Presente
+                            </p>
+                            <p class="text-gray-600 text-sm">Enfoque en programación full stack, bases de datos y
+                                metodologías ágiles.</p>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Columna Derecha: Habilidades Blandas, Metodologías e Idiomas/Intereses -->
                 <div class="space-y-6">
-                    <div class="rounded-2xl border border-green-600 bg-gray-50 p-6">
-                        <h3 class="text-xl font-bold text-black mb-4">Habilidades Blandas</h3>
-                        <div class="grid grid-cols-2 gap-3">
-                            <div class="flex items-center gap-2">
-                                <div class="w-2 h-2 bg-green-600 rounded-full"></div>
+                    <!-- Habilidades Blandas (con Iconos) -->
+                    <div
+                        class="card-stagger rounded-2xl border border-green-600 bg-gray-50 p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-xl font-bold text-black mb-4 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            Habilidades Blandas
+                        </h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
                                 <span class="text-gray-700 text-sm">Trabajo en equipo</span>
                             </div>
-                            <div class="flex items-center gap-2">
-                                <div class="w-2 h-2 bg-green-600 rounded-full"></div>
+                            <div class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                </svg>
                                 <span class="text-gray-700 text-sm">Comunicación efectiva</span>
                             </div>
-                            <div class="flex items-center gap-2">
-                                <div class="w-2 h-2 bg-green-600 rounded-full"></div>
+                            <div class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                </svg>
                                 <span class="text-gray-700 text-sm">Resolución de problemas</span>
                             </div>
-                            <div class="flex items-center gap-2">
-                                <div class="w-2 h-2 bg-green-600 rounded-full"></div>
+                            <div class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
                                 <span class="text-gray-700 text-sm">Adaptabilidad</span>
                             </div>
-                            <div class="flex items-center gap-2">
-                                <div class="w-2 h-2 bg-green-600 rounded-full"></div>
-                                <span class="text-gray-700 text-sm">Liderazgo</span>
+                            <div class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                </svg>
+                                <span class="text-gray-700 text-sm">Proactividad</span>
                             </div>
-                            <div class="flex items-center gap-2">
-                                <div class="w-2 h-2 bg-green-600 rounded-full"></div>
+                            <div class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12z" />
+                                </svg>
                                 <span class="text-gray-700 text-sm">Aprendizaje continuo</span>
                             </div>
-                            <div class="flex items-center gap-2">
-                                <div class="w-2 h-2 bg-green-600 rounded-full"></div>
+                            <div class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                </svg>
                                 <span class="text-gray-700 text-sm">Pensamiento crítico</span>
                             </div>
-                            <div class="flex items-center gap-2">
-                                <div class="w-2 h-2 bg-green-600 rounded-full"></div>
+                            <div class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
                                 <span class="text-gray-700 text-sm">Gestión del tiempo</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="rounded-2xl border border-green-600 bg-gray-50 p-6">
-                        <h3 class="text-xl font-bold text-black mb-4">Metodologías</h3>
+                    <!-- Metodologías (Completado desde aquí) -->
+                    <div
+                        class="card-stagger rounded-2xl border border-green-600 bg-gray-50 p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-xl font-bold text-black mb-4 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            Metodologías
+                        </h3>
                         <div class="flex flex-wrap gap-2">
                             <span
-                                class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Scrum</span>
+                                class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium hover:bg-green-200 hover:text-green-700 transition-colors cursor-pointer">Scrum</span>
                             <span
-                                class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Kanban</span>
+                                class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium hover:bg-green-200 hover:text-green-700 transition-colors cursor-pointer">Kanban</span>
                             <span
-                                class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Agile</span>
-                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Git
+                                class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium hover:bg-green-200 hover:text-green-700 transition-colors cursor-pointer">Agile</span>
+                            <span
+                                class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium hover:bg-green-200 hover:text-green-700 transition-colors cursor-pointer">Git
                                 Flow</span>
+                        </div>
+                    </div>
+
+                    <!-- Idiomas e Intereses (Nueva Card) -->
+                    <div
+                        class="card-stagger rounded-2xl border border-green-600 bg-gray-50 p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-xl font-bold text-black mb-4 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            Idiomas e Intereses
+                        </h3>
+                        <div class="space-y-4">
+                            <!-- Idiomas -->
+                            <div class="space-y-1">
+                                <h4 class="text-gray-800 font-semibold text-sm mb-2">Idiomas</h4>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-2 h-2 bg-green-600 rounded-full"></div>
+                                    <span class="text-gray-700 text-sm">Español: Nativo</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                    <span class="text-gray-700 text-sm">Inglés: Intermedio (B1)</span>
+                                </div>
+                            </div>
+
+                            <!-- Intereses -->
+                            <div class="space-y-1">
+                                <h4 class="text-gray-800 font-semibold text-sm mb-2">Intereses</h4>
+                                <div class="grid grid-cols-1 gap-1">
+                                    <span class="text-gray-700 text-sm flex items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="h-4 w-4 text-green-600 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                        </svg>
+                                        Desarrollo de aplicaciones móviles y web
+                                    </span>
+                                    <span class="text-gray-700 text-sm flex items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="h-4 w-4 text-green-600 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                        </svg>
+                                        Aprendizaje de nuevas tecnologías (IA, Cloud)
+                                    </span>
+                                    <!-- Agrega más intereses si quieres, ej: <span class="text-gray-700 text-sm flex items-center gap-2">... Deportes y fitness</span> -->
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="mt-8 flex justify-center">
-                <a href="./assets/GOMEZ CUEVA ELIAS JAIR  -  CV.pdf" download
-                    class="inline-flex items-center gap-2 rounded-md bg-green-600 px-5 py-2.5 font-semibold text-white shadow hover:bg-green-500">
-                    Descargar CV
-                </a>
-            </div>
         </div>
     </section>
+
 
     <!-- Proyectos -->
     <section id="Proyectos" class="radial-bg">
         <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-            <h2 class="mb-10 text-center text-4xl font-bold">PROYECTOS</h2>
-            <p class="mx-auto mb-10 max-w-3xl text-center text-white/80">Una selección de proyectos web y móviles que
-                reflejan mi enfoque en rendimiento, accesibilidad y buenas prácticas.</p>
+            <h2 class="mb-4 text-center text-4xl font-bold">PROYECTOS</h2>
+            <p class="mx-auto mb-10 max-w-3xl text-center text-white/80 text-xl">
+                Una selección de proyectos web y móviles que reflejan mi enfoque en rendimiento, accesibilidad y buenas
+                prácticas.
+            </p>
 
             <!-- Filtros -->
             <div class="mb-8 flex flex-wrap items-center justify-center gap-3">
@@ -284,7 +385,7 @@
             </div>
 
             <div id="gridProjects" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                <div class="card group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-4 ring-1 ring-white/10"
+                <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-4 ring-1 ring-white/10"
                     data-type="web">
                     <a href="https://frontend-cold-truck.vercel.app/landing" target="_blank"
                         class="relative object-cover">
@@ -310,9 +411,10 @@
                             <span class="rounded-full bg-green-600/20 px-2 py-1 text-green-300">TailwindCSS</span>
                         </div>
                     </div>
-                    <div class="mt-4 flex items-center gap-2 justify-between text-sm">
-                        <a href="https://youtu.be/wdj56toXRDE" target="_blank"
-                            class="rounded-md bg-red-600 px-3 py-1 text-white font-semibold hover:bg-red-500 flex justify-center items-center gap-2">Video
+                    <div class="mt-4 grid items-center gap-2 justify-between text-sm grid-cols-2 md:flex">
+                        <a href="https://youtu.be/JPD0t9TSI8w" target="_blank"
+                            class="rounded-md bg-red-600 px-3 py-1 text-white font-semibold hover:bg-red-500 flex justify-center items-center gap-2">
+                            Video
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="currentColor"
                                 class="h-6 w-6">
                                 <path
@@ -340,7 +442,7 @@
                     </div>
                 </div>
                 <article
-                    class="card group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-4 ring-1 ring-white/10"
+                    class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-4 ring-1 ring-white/10"
                     data-type="games">
                     <a href="https://eliasgomezc.github.io/frontendStarJumper/Vista/main.html" target="_blank"
                         class="relative object-cover">
@@ -387,7 +489,7 @@
                     </div>
                 </article>
                 <article
-                    class="card group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-4 ring-1 ring-white/10"
+                    class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-4 ring-1 ring-white/10"
                     data-type="mobile">
                     <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1200&auto=format&fit=crop"
                         alt="Landing moderna"
@@ -418,7 +520,7 @@
                     </div>
                 </article>
                 <article
-                    class="card group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-4 ring-1 ring-white/10"
+                    class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-4 ring-1 ring-white/10"
                     data-type="mobile">
                     <img src="./images/BookItAppMovil.jpg" alt="BookIt móvil"
                         class="h-44 w-full rounded-xl object-cover transition group-hover:scale-105 duration-700" />
@@ -455,7 +557,7 @@
                 </article>
 
                 <article
-                    class="card group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-4 ring-1 ring-white/10"
+                    class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-4 ring-1 ring-white/10"
                     data-type="web">
                     <img src="./images/TaskHubAppWeb.png" alt="API REST"
                         class="h-44 w-full rounded-xl object-cover transition group-hover:scale-105 duration-700" />
@@ -487,88 +589,175 @@
     </section>
 
     <!-- Habilidades -->
-    <section id="Habilidades" class="bg-white">
-        <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-            <h2 class="mb-10 text-center text-4xl font-bold text-black">HABILIDADES</h2>
-
-            <!-- Carrusel -->
-            <div class="overflow-hidden relative w-full">
-                <!-- Contenedor animado -->
-                <div class="flex gap-10 animate-scroll">
-                    <!-- Duplicamos los iconos para efecto infinito -->
-                    <div class="flex gap-10">
-                        <div>
-                            <svg class="h-32 w-32" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                <path fill="#fe780b"
-                                    d="M128 96L162.9 491.8L319.5 544L477.1 491.8L512 96L128 96zM436.2 223.9L252.4 223.9L256.5 273.3L432.1 273.3L418.5 421.7L320.6 448.7L320.6 449L319.5 449L220.8 421.7L214.8 345.9L262.5 345.9L266 384L319.5 398.5L373.2 384L379.2 321.8L212.3 321.8L199.5 176.2L440.6 176.2L436.2 223.9z" />
-                            </svg>
+    <section id="Habilidades" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Título Principal -->
+            <div class="text-center mb-16 animate-fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    HABILIDADES TECNOLOGICAS
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Estas son las herramientas y tecnologías con las que trabajo diariamente, organizadas por categorías
+                    para crear soluciones innovadoras.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-10 ">
+                <!-- Categoría: Frontend -->
+                <div class="mb-5 bg-[#0f1720] p-4 rounded-2xl">
+                    <h3 class="category-title text-2xl md:text-3xl font-bold mb-8 text-center text-white">
+                        Frontend
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-6 md:gap-8">
+                        <div
+                            class="group bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition-all duration-300 transform border border-gray-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                alt="React" class="w-12 h-12 mx-auto mb-4 opacity-80 group-hover:opacity-100"
+                                loading="lazy" />
+                            <h4 class="text-lg font-semibold text-gray-800">React</h4>
                         </div>
-                        <div>
-                            <svg class="h-32 w-32" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                <path fill="#8f80b7"
-                                    d="M472.3 96L96 96L96 472.3C96 491.3 103.6 509.5 117 523C130.4 536.5 148.7 544 167.7 544L472.3 544C491.3 544 509.5 536.4 523 523C536.5 509.6 544 491.3 544 472.3L544 167.7C544 148.7 536.4 130.5 523 117C509.6 103.5 491.3 96 472.3 96zM428.4 495.4C420.7 486.9 416.7 474.7 416.4 458.8L447.7 458.8C447.9 472.9 452.8 479.9 462.5 479.9C467.4 479.9 470.9 478.3 473 475.2C475 472.1 476 467.2 476 460.4C476 455 474.7 450.5 472 447C468.5 442.8 463.9 439.5 458.8 437.5L447.2 432C436.9 427.1 429.4 421.2 424.7 414.4C420.2 407.6 418 398.1 418 386C418 372.4 422 361.4 429.8 352.9C437.9 344.4 448.9 340.2 463 340.2C476.6 340.2 487.1 344.4 494.5 352.7C502 361.1 506 373 506.3 388.6L476.2 388.6C476.4 383.5 475.3 378.4 473.2 373.8C471.5 370.4 468.2 368.7 463.2 368.7C454.4 368.7 450 373.9 450 384.4C450 389.7 451.1 393.8 453.2 397C456.3 400.5 460.2 403.2 464.6 404.8L475.7 409.7C487.2 415 495.4 421.4 500.5 429.1C505.6 436.8 508.1 447.1 508.1 460.1C508.1 475.6 504.1 487.5 495.8 495.8C487.6 504.1 476.3 508.3 461.7 508.3C447.1 508.3 436.1 504.1 428.3 495.6zM327.4 495.4C319.7 486.9 315.7 474.7 315.4 458.8L346.7 458.8C346.9 472.9 351.8 479.9 361.5 479.9C366.4 479.9 369.9 478.3 371.9 475.2C373.9 472.1 374.9 467.2 374.9 460.4C374.9 455 373.6 450.5 371 447C367.5 442.8 362.9 439.5 357.8 437.5L346.2 432C335.9 427.1 328.4 421.2 323.7 414.4C319.2 407.6 317 398.1 317 386C317 372.4 321 361.4 328.8 352.9C336.9 344.4 347.9 340.2 362 340.2C375.6 340.2 386.1 344.4 393.4 352.7C401 361.1 404.9 373 405.3 388.6L375.2 388.6C375.4 383.5 374.3 378.4 372.2 373.8C370.5 370.4 367.2 368.7 362.2 368.7C353.4 368.7 349 373.9 349 384.4C349 389.7 350.1 393.8 352.2 397C355.3 400.5 359.2 403.2 363.6 404.8L374.7 409.7C386.2 415 394.4 421.4 399.5 429.1C404.6 436.8 407.1 447.1 407.1 460.1C407.1 475.6 403 487.5 394.8 495.8C386.6 504.1 375.3 508.3 360.7 508.3C346.1 508.3 335.1 504.1 327.3 495.6zM221.8 496.5C213.4 488.8 209.3 477.3 209.3 462L209.3 386.6C209.3 371.4 213.7 359.9 222.5 352C231.4 344.2 243.2 340.2 257.7 340.2C271.8 340.2 282.9 344.2 291.1 352.2C299.4 360.2 303.6 372.2 303.6 388.1L303.6 394.1L270.5 394.1L270.5 388.3C270.5 382.2 269.2 377.6 266.5 374.7C265.4 373.2 263.9 372 262.2 371.2C260.5 370.4 258.7 370 256.8 370.1C251.4 370.1 247.6 371.9 245.4 375.7C243.1 380.9 242.1 386.5 242.4 392.1L242.4 457.6C242.4 471.3 247.2 478.2 256.8 478.4C261.3 478.4 264.7 476.8 267 473.6C269.5 469.5 270.7 464.8 270.5 460L270.5 455.1L303.6 455.1L303.6 460.2C303.6 470.8 301.5 479.7 297.4 486.8C293.4 493.7 287.5 499.3 280.3 502.8C272.6 506.5 264.2 508.3 255.7 508.1C241.5 508.1 230.2 504.2 221.9 496.5z" />
-                            </svg>
+                        <div
+                            class="group bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition-all duration-300 transform border border-gray-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                alt="React Native" class="w-12 h-12 mx-auto mb-4 opacity-80 group-hover:opacity-100"
+                                loading="lazy" />
+                            <h4 class="text-lg font-semibold text-gray-800">React Native</h4>
                         </div>
-                        <div>
-                            <svg class="h-32 w-32" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                <path fill="#74C0FC"
-                                    d="M482.2 241.2C476.8 239.4 471.4 237.7 466 236.1C466.9 232.4 467.7 228.7 468.5 225C480.8 165.4 472.7 117.5 445.4 101.7C419.1 86.6 376.2 102.3 332.8 140.1C328.5 143.8 324.3 147.7 320.3 151.6C317.6 149 314.8 146.4 312 143.9C266.5 103.5 220.9 86.5 193.6 102.4C167.4 117.6 159.6 162.7 170.6 219.1C171.7 224.7 172.9 230.2 174.3 235.8C167.9 237.6 161.6 239.6 155.7 241.7C102.3 260.2 64 289.4 64 319.6C64 350.8 104.8 382.1 160.3 401.1C164.8 402.6 169.3 404.1 173.9 405.4C172.4 411.4 171.1 417.3 169.9 423.4C159.4 478.9 167.6 522.9 193.8 538C220.8 553.6 266.2 537.6 310.4 498.9C313.9 495.8 317.4 492.6 320.9 489.2C325.3 493.5 329.9 497.6 334.5 501.6C377.3 538.4 419.6 553.3 445.7 538.2C472.7 522.6 481.5 475.3 470.1 417.7C469.2 413.3 468.2 408.8 467.1 404.2C470.3 403.3 473.4 402.3 476.5 401.3C534.2 382.2 576 351.3 576 319.6C576 289.3 536.6 259.9 482.2 241.2zM346.9 156.3C384.1 123.9 418.8 111.2 434.6 120.3C451.5 130 458 169.2 447.4 220.7C446.7 224.1 446 227.4 445.1 230.7C422.9 225.7 400.4 222.1 377.8 220.1C364.8 201.5 350.6 183.7 335.2 167C339.1 163.3 342.9 159.8 346.9 156.3zM231.2 371.5C236.3 380.2 241.5 388.9 247 397.4C231.4 395.7 215.9 393.2 200.6 389.9C205 375.5 210.5 360.6 216.9 345.4C221.5 354.2 226.2 362.9 231.2 371.5zM200.9 251.2C215.3 248 230.6 245.4 246.5 243.4C241.2 251.7 236 260.2 231.1 268.8C226.2 277.3 221.4 286 216.9 294.8C210.6 279.9 205.3 265.3 200.9 251.2zM228.3 320.1C234.9 306.3 242.1 292.8 249.7 279.5C257.3 266.2 265.5 253.3 274.1 240.6C289.1 239.5 304.4 238.9 320 238.9C335.6 238.9 351 239.5 365.9 240.6C374.4 253.2 382.5 266.1 390.2 279.3C397.9 292.5 405.1 306 411.9 319.7C405.2 333.5 398 347.1 390.3 360.5C382.7 373.8 374.6 386.7 366.1 399.5C351.2 400.6 335.7 401.1 320 401.1C304.3 401.1 289.1 400.6 274.4 399.7C265.7 387 257.5 374 249.8 360.7C242.1 347.4 235 333.9 228.3 320.1zM408.9 371.3C414 362.5 418.8 353.6 423.5 344.6C429.9 359.1 435.5 373.8 440.4 388.9C424.9 392.4 409.2 395.1 393.4 396.9C398.8 388.5 403.9 379.9 408.9 371.3zM423.3 294.8C418.6 286 413.8 277.2 408.8 268.6C403.9 260.1 398.8 251.7 393.5 243.4C409.6 245.4 425 248.1 439.4 251.4C434.8 266.2 429.4 280.6 423.3 294.8zM320.2 182.3C330.7 193.7 340.6 205.7 349.8 218.1C330 217.2 310.1 217.2 290.3 218.1C300.1 205.2 310.2 193.2 320.2 182.3zM204.2 121C221 111.2 258.3 125.2 297.6 160C300.1 162.2 302.6 164.6 305.2 167C289.7 183.7 275.4 201.5 262.3 220.1C239.7 222.1 217.3 225.6 195.1 230.5C193.8 225.4 192.7 220.2 191.6 215C182.2 166.6 188.4 130.1 204.2 121zM179.7 384.6C175.5 383.4 171.4 382.1 167.3 380.7C146 374 121.8 363.4 104.3 349.5C94.2 342.5 87.4 331.7 85.5 319.6C85.5 301.3 117.1 277.9 162.7 262C168.4 260 174.2 258.2 180 256.5C186.8 278.2 195 299.5 204.5 320.1C194.9 341 186.6 362.6 179.7 384.6zM296.3 482.6C279.8 497.7 260.7 509.7 239.9 517.9C228.8 523.2 216 523.7 204.6 519.2C188.7 510 182.1 474.7 191.1 427.2C192.2 421.6 193.4 416 194.8 410.5C217.2 415.3 239.8 418.6 262.7 420.3C275.9 439 290.4 456.9 305.9 473.7C302.7 476.8 299.5 479.8 296.3 482.6zM320.8 458.3C310.6 447.3 300.4 435.1 290.5 422C300.1 422.4 310 422.6 320 422.6C330.3 422.6 340.4 422.4 350.4 421.9C341.2 434.6 331.3 446.7 320.8 458.3zM451.5 488.3C450.6 500.5 444.6 511.9 435 519.6C419.1 528.8 385.2 516.8 348.6 485.4C344.4 481.8 340.2 477.9 335.9 473.9C351.2 457 365.3 439.1 378.1 420.3C401 418.4 423.8 414.9 446.3 409.8C447.3 413.9 448.2 418 449 422C453.9 443.6 454.7 466.1 451.5 488.3zM469.7 380.8C466.9 381.7 464.1 382.6 461.2 383.4C454.2 361.6 445.6 340.3 435.7 319.6C445.3 299.2 453.4 278.2 460.2 256.7C465.4 258.2 470.4 259.8 475.2 261.4C521.8 277.4 554.5 301.2 554.5 319.4C554.5 339 519.6 364.3 469.7 380.8zM320 365.8C345.3 365.8 365.8 345.3 365.8 320C365.8 294.7 345.3 274.2 320 274.2C294.7 274.2 274.2 294.7 274.2 320C274.2 345.3 294.7 365.8 320 365.8z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <svg class="h-32 w-32" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                <path fill="#3d873a"
-                                    d="M316.3 516C314.2 516 312.1 515.4 310.2 514.4L291 503C288.1 501.4 289.5 500.8 290.5 500.5C294.3 499.2 295.1 498.9 299.2 496.5C299.6 496.3 300.2 496.4 300.6 496.6L315.4 505.4C315.9 505.7 316.7 505.7 317.2 505.4L375 472C375.5 471.7 375.9 471.1 375.9 470.4L375.9 403.7C375.9 403 375.6 402.4 375 402.1L317.2 368.8C316.7 368.5 316 368.5 315.4 368.8L257.6 402.1C257 402.4 256.7 403.1 256.7 403.7L256.7 470.4C256.7 471 257.1 471.6 257.6 471.9L273.4 481C282 485.3 287.3 480.2 287.3 475.2L287.3 409.3C287.3 408.4 288 407.6 289 407.6L296.3 407.6C297.2 407.6 298 408.3 298 409.3L298 475.2C298 486.7 291.8 493.2 280.9 493.2C277.6 493.2 274.9 493.2 267.6 489.6L252.4 480.9C248.7 478.7 246.3 474.7 246.3 470.4L246.3 403.7C246.3 399.4 248.6 395.3 252.4 393.2L310.2 359.8C313.9 357.7 318.7 357.7 322.3 359.8L380.1 393.2C383.8 395.4 386.2 399.4 386.2 403.7L386.2 470.4C386.2 474.7 383.9 478.8 380.1 480.9L322.3 514.3C320.6 515.4 318.5 516 316.3 516zM363 450.2C363 437.7 354.6 434.4 336.8 432C318.8 429.6 317 428.4 317 424.2C317 420.7 318.5 416.1 331.8 416.1C343.7 416.1 348.1 418.7 349.9 426.7C350.1 427.5 350.7 428 351.5 428L359 428C359.5 428 359.9 427.8 360.2 427.5C360.5 427.1 360.7 426.7 360.6 426.2C359.4 412.4 350.3 406 331.8 406C315.3 406 305.5 413 305.5 424.6C305.5 437.3 315.3 440.7 331.1 442.3C350 444.2 351.5 446.9 351.5 450.6C351.5 457.1 346.3 459.8 334.1 459.8C318.8 459.8 315.4 456 314.3 448.4C314.2 447.6 313.5 447 312.6 447L305.1 447C304.2 447 303.4 447.7 303.4 448.7C303.4 458.4 308.7 470 334 470C352.5 470 363 462.8 363 450.2zM417.5 400.1C417.5 406.2 412.5 411.2 406.4 411.2C400.3 411.2 395.3 406.2 395.3 400.1C395.3 393.8 400.5 389 406.4 389C412.4 388.9 417.5 393.8 417.5 400.1zM415.7 400.1C415.7 394.9 411.5 390.8 406.3 390.8C401.2 390.8 397 394.9 397 400.1C397 405.3 401.2 409.5 406.3 409.5C411.5 409.4 415.7 405.2 415.7 400.1zM411.2 406.3L408.6 406.3C408.5 405.7 408.1 402.5 408.1 402.4C407.9 401.7 407.7 401.3 406.8 401.3L404.6 401.3L404.6 406.3L402.2 406.3L402.2 393.8L406.5 393.8C408 393.8 410.9 393.8 410.9 397.1C410.9 399.4 409.4 399.9 408.5 400.2C410.2 400.3 410.3 401.4 410.6 403C410.7 404 410.9 405.7 411.2 406.3zM408.4 397.5C408.4 395.8 407.2 395.8 406.6 395.8L404.6 395.8L404.6 399.3L406.5 399.3C408.1 399.3 408.4 398.2 408.4 397.5zM137.3 255C137.3 252.3 135.9 249.9 133.6 248.6L72.3 213.3C71.3 212.7 70.1 212.4 68.9 212.3L68.3 212.3C67.1 212.3 66 212.7 64.9 213.3L3.7 248.6C1.4 249.9 0 252.4 0 255L.1 350C.1 351.3 .8 352.5 1.9 353.2C3 353.9 4.4 353.9 5.6 353.2L42 332.3C44.3 330.9 45.7 328.5 45.7 325.9L45.7 281.5C45.7 278.9 47.1 276.4 49.4 275.1L64.9 266.2C66.1 265.5 67.3 265.2 68.6 265.2C69.9 265.2 71.2 265.5 72.3 266.2L87.8 275.1C90.1 276.4 91.5 278.9 91.5 281.5L91.5 325.9C91.5 328.5 92.9 331 95.2 332.3L131.6 353.2C132.7 353.9 134.2 353.9 135.3 353.2C136.4 352.6 137.1 351.3 137.1 350L137.3 255zM472.5 151.3L472.5 327.7C472.5 330.3 471.1 332.8 468.8 334.1L407.5 369.5C405.2 370.8 402.4 370.8 400.1 369.5L338.8 334.1C336.5 332.8 335.1 330.3 335.1 327.7L335.1 256.9C335.1 254.3 336.5 251.8 338.8 250.5L400.1 215.1C402.4 213.8 405.2 213.8 407.5 215.1L422.8 223.9C424.5 224.9 426.7 223.6 426.7 221.7L426.7 127.7C426.7 124.9 429.7 123.1 432.2 124.5L468.7 144.9C471 146.1 472.5 148.6 472.5 151.3zM426.5 280.2C426.5 279.5 426.1 278.9 425.6 278.6L404.6 266.4C404 266.1 403.3 266.1 402.7 266.4L381.7 278.6C381.1 278.9 380.8 279.5 380.8 280.2L380.8 304.5C380.8 305.2 381.2 305.8 381.7 306.1L402.7 318.2C403.3 318.5 404 318.5 404.5 318.2L425.5 306.1C426.1 305.8 426.4 305.2 426.4 304.5L426.4 280.2L426.5 280.2zM636.3 279.5C638.6 278.2 640 275.7 640 273.1L640 256C640 253.4 638.6 250.9 636.3 249.6L575.4 214.2C573.1 212.9 570.3 212.9 568 214.2L506.7 249.6C504.4 250.9 503 253.4 503 256L503 326.8C503 329.5 504.4 331.9 506.7 333.2L567.6 367.9C569.8 369.2 572.6 369.2 574.9 367.9L611.7 347.4C614.2 346 614.2 342.4 611.7 341L550 305.6C548.8 304.9 548.1 303.7 548.1 302.4L548.1 280.2C548.1 278.9 548.8 277.7 550 277L569.2 265.9C570.3 265.2 571.8 265.2 572.9 265.9L592.1 277C593.2 277.7 594 278.9 594 280.2L594 297.6C594 300.4 597.1 302.2 599.6 300.8L636.3 279.5zM559 283C558.6 283.3 558.3 283.7 558.3 284.2L558.3 297.8C558.3 298.3 558.6 298.8 559 299L570.8 305.8C571.2 306.1 571.8 306.1 572.2 305.8L584 299C584.4 298.7 584.7 298.3 584.7 297.8L584.7 284.2C584.7 283.7 584.4 283.2 584 283L572.2 276.2C571.8 275.9 571.2 275.9 570.8 276.2L559 283zM304.8 326.5L304.8 256.1C304.8 253.5 303.2 251 300.9 249.7L239.8 214.5C237.7 213.3 234.8 213.1 232.4 214.5L171.3 249.7C169 251 167.4 253.4 167.4 256.1L167.4 326.5C167.4 329.3 169.3 331.7 171.4 332.9L232.6 368.1C235 369.5 237.8 369.4 240 368.1L301 332.9C302.8 331.9 304.1 330.2 304.6 328.2C304.7 327.7 304.8 327.1 304.8 326.5zM230.5 201.6L229.7 202.1L230.8 202.1L230.5 201.6zM306.7 331.8L306.3 331.1L306.3 332L306.7 331.8z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <svg class="h-32 w-32" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                <path fill="#8472bb"
-                                    d="M320 168.5C491.4 168.5 623.2 240.7 623.2 320C623.2 399.3 491.3 471.5 320 471.5C148.6 471.5 16.8 399.3 16.8 320C16.8 240.7 148.7 168.5 320 168.5zM320 151.7C143.3 151.7 0 227 0 320C0 413 143.3 488.3 320 488.3C496.7 488.3 640 413 640 320C640 227 496.7 151.7 320 151.7zM218.2 306.5C210.3 347 182.4 342.8 148.1 342.8L161.8 272.2C199.8 272.2 225.6 268.1 218.2 306.5zM97.4 414.3L134.1 414.3L142.8 369.5C183.9 369.5 209.4 372.5 233 350.4C259.1 326.4 265.9 283.7 247.3 262.3C237.6 251.1 222 245.6 200.8 245.6L130.1 245.6L97.4 414.3zM283.1 200.7L319.6 200.7L310.9 245.5C342.4 245.5 371.6 243.2 385.7 256.2C400.5 269.8 393.4 287.2 377.4 369.3L340.4 369.3C355.8 289.9 358.7 283.3 353.1 277.3C347.7 271.5 335.4 272.7 305.7 272.7L286.9 369.3L250.4 369.3L283.1 200.7zM505 306.5C497 347.6 468.3 342.8 434.9 342.8L448.6 272.2C486.8 272.2 512.4 268.1 505 306.5zM384.2 414.3L421 414.3L429.7 369.5C472.9 369.5 496.8 372 519.9 350.4C546 326.4 552.8 283.7 534.2 262.3C524.5 251.1 508.9 245.6 487.7 245.6L417 245.6L384.2 414.3z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <svg class="h-32 w-32" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                <path fill="#4a98d3"
-                                    d="M488.3 96L152.1 96C121.1 96 96 121.1 96 152C95.9 152 96 148 96 488C96 518.9 121.1 544 152 544L488.2 544C519 543.8 543.9 518.8 543.9 488L543.9 152C544 121.2 519.1 96.2 488.3 96zM293 435.3C292.8 450 280.9 461.9 266.1 461.9L183.4 461.9C168.6 462 156.5 450.1 156.4 435.3L156.4 181.1C156.4 166.3 168.4 154.2 183.3 154.2L266.2 154.2C281 154.2 293.1 166.2 293.1 181.1L293.1 435.3L293 435.3zM486.1 323.3C486.1 338.1 474.1 350.2 459.2 350.2L378.2 350.2C363.4 350.2 351.3 338.2 351.3 323.3L351.3 181.2C351.3 166.4 363.3 154.3 378.1 154.3L459.2 154.3C474 154.3 486.1 166.3 486.1 181.2L486.1 323.3z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <svg class="h-32 w-32" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                <path
-                                    d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <svg class="h-32 w-32" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                <path fill="#ce7c09"
-                                    d="M568 268.6L567.3 266.8L497.6 85C496.2 81.4 493.7 78.4 490.4 76.4C488 74.8 485.3 73.9 482.4 73.6C479.5 73.3 476.7 73.7 474 74.7C471.3 75.7 468.9 77.4 466.9 79.5C465 81.6 463.6 84.2 462.8 86.9L415.8 230.9L225.3 230.9L178.2 86.9C177.4 84.1 176 81.6 174.1 79.5C172.1 77.4 169.7 75.8 167 74.7C164.4 73.7 161.5 73.3 158.6 73.6C155.7 73.9 153 74.8 150.6 76.4C147.4 78.4 144.8 81.5 143.4 85L73.8 266.8L73 268.6C63 294.8 61.7 323.6 69.5 350.6C77.2 377.5 93.5 401.3 115.9 418.2L116.2 418.4L116.8 418.8L222.8 498.3C261.3 527.4 289.5 548.6 307.4 562.2C311.1 564.1 315.7 566.5 320.4 566.5C325.1 566.5 329.7 564.1 333.4 562.2C351.3 548.7 379.5 527.3 418 498.3L524.7 418.4L525 418.1C547.4 401.2 563.7 377.5 570.6 350.6C579.2 323.6 578 294.8 568 268.6z" />
-                            </svg>
+                        <div
+                            class="group bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition-all duration-300 transform border border-gray-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+                                alt="JavaScript" class="w-12 h-12 mx-auto mb-4 opacity-80 group-hover:opacity-100"
+                                loading="lazy" />
+                            <h4 class="text-lg font-semibold text-gray-800">JavaScript</h4>
                         </div>
                     </div>
                 </div>
+
+                <!-- Categoría: Backend -->
+                <div class="mb-5 bg-[#0f1720] p-4 rounded-2xl">
+                    <h3 class="category-title text-2xl md:text-3xl font-bold text-white mb-8 text-center">
+                        Backend
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-6 md:gap-8">
+                        <div
+                            class="group bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition-all duration-300 transform border border-gray-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                alt="Java" class="w-12 h-12 mx-auto mb-4 opacity-80 group-hover:opacity-100"
+                                loading="lazy" />
+                            <h4 class="text-lg font-semibold text-gray-800">Java</h4>
+                        </div>
+                        <div
+                            class="group bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition-all duration-300 transform border border-gray-100">
+                            <img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="Node.js"
+                                class="w-12 h-12 mx-auto mb-4 opacity-80 group-hover:opacity-100" loading="lazy" />
+                            <h4 class="text-lg font-semibold text-gray-800">Node.js</h4>
+                        </div>
+                        <div
+                            class="group bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition-all duration-300 transform border border-gray-100">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
+                                alt="PHP" class="w-18 h-12 mx-auto mb-4 opacity-80 group-hover:opacity-100"
+                                loading="lazy" />
+                            <h4 class="text-lg font-semibold text-gray-800">PHP</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoría: Bases de Datos -->
+                <div class="mb-5 bg-[#0f1720] p-4 rounded-2xl">
+                    <h3 class="category-title text-2xl md:text-3xl font-bold text-white mb-8 text-center">
+                        Bases de Datos
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-6 md:gap-8">
+                        <div
+                            class="group bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition-all duration-300 transform border border-gray-100">
+                            <img src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg" alt="MySQL"
+                                class="w-18 h-12 mx-auto mb-4 opacity-80 group-hover:opacity-100" loading="lazy" />
+                            <h4 class="text-lg font-semibold text-gray-800">MySQL</h4>
+                        </div>
+                        <div
+                            class="group bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition-all duration-300 transform border border-gray-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                                alt="Firebase" class="w-12 h-12 mx-auto mb-4 opacity-80 group-hover:opacity-100"
+                                loading="lazy" />
+                            <h4 class="text-lg font-semibold text-gray-800">Firebase</h4>
+                        </div>
+                        <div
+                            class="group bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition-all duration-300 transform border border-gray-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                                alt="MongoDB" class="w-12 h-12 mx-auto mb-4 opacity-80 group-hover:opacity-100"
+                                loading="lazy" />
+                            <h4 class="text-lg font-semibold text-gray-800">MongoDB</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Control de Versiones -->
+                <div class="mb-5 bg-[#0f1720] p-4 rounded-2xl">
+                    <h3 class="category-title text-2xl md:text-3xl font-bold text-white mb-8 text-center">
+                        Control de Versiones
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+                        <div
+                            class="group bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition-all duration-300 transform border border-gray-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                alt="GitHub" class="w-12 h-12 mx-auto mb-4 opacity-80 group-hover:opacity-100"
+                                loading="lazy" />
+                            <h4 class="text-lg font-semibold text-gray-800">GitHub</h4>
+                        </div>
+                        <div
+                            class="group bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition-all duration-300 transform border border-gray-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
+                                alt="GitLab" class="w-12 h-12 mx-auto mb-4 opacity-80 group-hover:opacity-100"
+                                loading="lazy" />
+                            <h4 class="text-lg font-semibold text-gray-800">GitLab</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diseño y Estilos -->
+                <div class="mb-5 bg-[#0f1720] p-4 rounded-2xl">
+                    <h3 class="category-title text-2xl md:text-3xl font-bold text-white mb-8 text-center">
+                        Diseño y Estilos
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                        <div
+                            class="group bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition-all duration-300 transform border border-gray-100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                                alt="Figma" class="w-12 h-12 mx-auto mb-4 opacity-80 group-hover:opacity-100"
+                                loading="lazy" />
+                            <h4 class="text-lg font-semibold text-gray-800">Figma</h4>
+                        </div>
+                        <div
+                            class="group bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition-all duration-300 transform border border-gray-100">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
+                                alt="Tailwind CSS" class="w-16 h-12 mx-auto mb-4 opacity-80 group-hover:opacity-100"
+                                loading="lazy" />
+                            <h4 class="text-lg font-semibold text-gray-800">TailwindCSS</h4>
+                        </div>
+                        <div
+                            class="group bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition-all duration-300 transform border border-gray-100">
+                            <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="Tailwind CSS"
+                                class="w-12 h-12 mx-auto mb-4 opacity-80 group-hover:opacity-100" loading="lazy" />
+                            <h4 class="text-lg font-semibold text-gray-800">CSS</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
 
     <!-- Contact -->
     <section id="Contacto" class="radial-bg">
         <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-            <h2 class="mb-10 text-center text-4xl font-bold">CONTACTO</h2>
-            <p class="text-center text-white/80 mb-12 max-w-2xl mx-auto">
+            <h2 class="mb-4 text-center text-4xl font-bold">CONTACTO</h2>
+            <p class="text-center text-white/80 mb-12 max-w-2xl mx-auto text-xl">
                 ¿Tienes un proyecto en mente? ¡Me encantaría colaborar contigo!
-                Envíame un mensaje y conversemos sobre cómo puedo ayudarte a hacer realidad tus ideas.
+                Envíame un mensaje y conversemos.
             </p>
 
-            <div class="grid items-start gap-8 lg:grid-cols-2">
+            <div class="flex items-start justify-center">
                 <!-- Enhanced contact form with better styling -->
-                <form class="rounded-2xl border border-white/10 bg-white/5 p-8 ring-1 ring-white/10 shadow-neon"
+                <!-- <form class="rounded-2xl border border-white/10 bg-white/5 p-8 ring-1 ring-white/10 shadow-neon"
                     onsubmit="event.preventDefault(); alert('¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.');">
                     <h3 class="text-xl font-bold mb-6 text-center">Envíame un mensaje</h3>
                     <div class="grid gap-6 sm:grid-cols-2">
@@ -607,14 +796,14 @@
                             Enviar mensaje
                         </button>
                     </div>
-                </form>
+                </form> -->
 
                 <!-- Enhanced contact information with better organization -->
                 <div class="space-y-6">
-                    <div class="rounded-2xl border border-white/10 bg-white/5 p-8 ring-1 ring-white/10 shadow-neon">
+                    <div class="rounded-2xl border border-white/10 bg-white/5 p-8 ring-1 ring-white/10 shadow-neon ">
                         <h3 class="text-xl font-bold mb-6 text-center">Información de contacto</h3>
-                        <div class="space-y-6">
-                            <div class="flex items-start gap-4">
+                        <div class="space-y-6 grid grid-cols-2 gap-5">
+                            <div class="flex items-end gap-4">
                                 <div
                                     class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white"
@@ -642,9 +831,8 @@
                                 </div>
                                 <div>
                                     <p class="font-semibold text-lg">Teléfono</p>
-                                    <a href="tel:+526632159161"
-                                        class="text-white/80 hover:text-green-400 transition-colors">+52
-                                        663-215-9161</a>
+                                    <a class="text-white/80 hover:text-green-400 transition-colors">
+                                        +xx xxx-xxx-xxxx</a>
                                 </div>
                             </div>
 
@@ -661,7 +849,7 @@
                                 </div>
                                 <div>
                                     <p class="font-semibold text-lg">Email</p>
-                                    <a href="mailto:eliasgcueva@gmail.com"
+                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eliasgcueva@gmail.com&subject=Oportunidad%20laboral&body=Vi%20tu%20perfil%20y%20me%20gustar%C3%ADa%20conversar%20sobre%20una%20posible%20oportunidad%20laboral%20%0A%0A%C2%BFPodemos%20agendar%20una%20reuni%C3%B3n%3F%0A%0A"
                                         class="text-white/80 hover:text-green-400 transition-colors">eliasgcueva@gmail.com</a>
                                 </div>
                             </div>
@@ -685,9 +873,8 @@
                         </div>
                     </div>
 
-                    <!-- Social Links -->
                     <div class="rounded-2xl border border-white/10 bg-white/5 p-6 ring-1 ring-white/10 shadow-neon">
-                        <h4 class="font-semibold text-lg mb-4 text-center">Sígueme en redes</h4>
+                        <h4 class="font-semibold text-lg mb-4 text-center">Mis redes</h4>
                         <div class="flex justify-center gap-4">
                             <a href="https://github.com/EliasGomezC" target="_blank"
                                 class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-500 transition-colors"
@@ -698,13 +885,17 @@
                                         d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.2-3.37-1.2-.45-1.17-1.1-1.49-1.1-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.04 1.53 1.04.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.08.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z" />
                                 </svg>
                             </a>
-                            <a href="#" target="_blank"
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eliasgcueva@gmail.com&subject=Oportunidad%20laboral&body=Vi%20tu%20perfil%20y%20me%20gustar%C3%ADa%20conversar%20sobre%20una%20posible%20oportunidad%20laboral%20%0A%0A%C2%BFPodemos%20agendar%20una%20reuni%C3%B3n%3F%0A%0A"
+                                target="_blank"
                                 class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-500 transition-colors"
                                 aria-label="LinkedIn">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                    class="h-6 w-6 text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-mail">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <path
-                                        d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4zM8.5 8h3.8v2.05h.05c.53-1.01 1.84-2.07 3.79-2.07 4.06 0 4.81 2.67 4.81 6.14V23h-4v-6.54c0-1.56-.03-3.56-2.17-3.56-2.18 0-2.51 1.7-2.51 3.44V23h-3.97z" />
+                                        d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" />
+                                    <path
+                                        d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" />
                                 </svg>
                             </a>
                         </div>
@@ -725,35 +916,7 @@
             </a>
         </div>
     </footer>
-
-    <script>
-        // Menú móvil
-        const btn_Header = document.querySelector('#btn-headerMobile');
-        const headerPanel = document.querySelector('#header_Mobile');
-        let open = false;
-        btn_Header.addEventListener('click', () => {
-            open = !open;
-            headerPanel.style.maxHeight = open ? headerPanel.scrollHeight + 'px' : '0px';
-            btn_Header.setAttribute('aria-expanded', String(open));
-        });
-
-        document.querySelector('#year').textContent = new Date().getFullYear();
-
-        // Filtro de proyectos
-        const buttons = document.querySelectorAll('.filter-btn');
-        const cards = document.querySelectorAll('#gridProjects .card');
-        buttons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                buttons.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                const type = btn.dataset.filter;
-                cards.forEach(card => {
-                    const show = type === 'all' || card.dataset.type === type;
-                    card.style.display = show ? '' : 'none';
-                });
-            });
-        });
-    </script>
 </body>
+<script src="./script.js"></script>
 
 </html>
