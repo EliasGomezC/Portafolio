@@ -9,17 +9,24 @@ btn_Header.addEventListener('click', () => {
 
 document.querySelector('#year').textContent = new Date().getFullYear();
 
-// Filtro de proyectos
-const buttons = document.querySelectorAll('.filter-btn');
-const cards = document.querySelectorAll('#gridProjects .card');
-buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-        buttons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const type = btn.dataset.filter;
-        cards.forEach(card => {
-            const show = type === 'all' || card.dataset.type === type;
-            card.style.display = show ? '' : 'none';
+document.addEventListener("DOMContentLoaded", () => {
+    const filterBtns = document.querySelectorAll(".filter-btn");
+    const projects = document.querySelectorAll("#gridProjects > *");
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            filterBtns.forEach(b => b.classList.remove("active", "border-green-500/60"));
+            btn.classList.add("active", "border-green-500/60");
+
+            const filter = btn.dataset.filter;
+
+            projects.forEach(project => {
+                if (filter === "all" || project.dataset.type === filter) {
+                    project.style.display = "block";
+                } else {
+                    project.style.display = "none";
+                }
+            });
         });
     });
 });
